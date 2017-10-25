@@ -2,6 +2,10 @@
 
 This is a simple benchmark of Go's `http` and various Python frameworks. 
 
+## Disclaimer
+
+I'm pretty much a Golang newb, so take my example with a grain of salt (or, better yet, issue a pull request).
+
 ## Execution
 
 ### 1. Start the server
@@ -26,3 +30,8 @@ If using `run-bench.sh`, the url of `http://127.0.0.1/FOO`, you can expect a res
 }
 ```
 
+## Results
+
+Go's `net/http` with `mux` routing was slightly more than twice as fast as the fastest Python framework, `falcon` (with cython and ujson). See the `results` directory for more information.
+
+![Benchmark Results](https://docs.google.com/spreadsheets/d/e/2PACX-1vRxhGzSdOXVaQfHXaw54clJinEfhHL-uWCAzJa2Eg2caXxjlcMzwZ1CfFFo9wLNIzNSXRzWlin35O6g/pubchart?oid=1279255866&amp;format=image)
